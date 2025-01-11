@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .svg-icon {
-    width: 24px; /* Adjust the size as needed */
-    height: 24px; /* Adjust the size as needed */
-    fill: currentColor; /* This will use the current text color */
-    color: #000000; /* Change this to your desired color */
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  color: #ffffff;
+}
+.user-icon {
+  width: 15px;
+  height: 15px;
+}
+
+body {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+@layer base {
+  header {
+    font-family: "Space Mono", system-ui, sans-serif;
   }
+}
