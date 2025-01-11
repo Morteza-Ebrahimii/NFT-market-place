@@ -1,9 +1,11 @@
-
+import {HomePage} from "./pages/homePage";
 
 function App() {
-
-  return null
-  
+  return (
+    <div className="app">
+      <HomePage />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.svg-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    fill: currentColor; /* This will use the current text color */
+    color: #000000; /* Change this to your desired color */
+  }
