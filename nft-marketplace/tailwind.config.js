@@ -17,6 +17,13 @@ module.exports = {
         sans: ['"Space Mono"', ...defaultTheme.fontFamily.sans],
       },
     },
+    extend: {
+      colors: {
+        "background-gray": "#3B3B3B",
+        "label-text": "#858584",
+        "caption": "#858584",
+      },
+    },
   },
   plugins: [],
 };

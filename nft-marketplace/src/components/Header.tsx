@@ -1,37 +1,112 @@
+import { useState } from "react";
 import Storefront from "../assets/nav/Storefront.png";
+import HomburgerMenu from "../assets/nav/homburger-menu.svg";
+import ArrowRight from "../assets/nav/ArrowRight.svg";
 import { Button } from "./Button";
 
 export function Header() {
+  const [isToggleHomburgerMenu, setIsToggleHomburgerMenu] = useState(false);
+
+  const handleHomburgerMenu = () => {
+    setIsToggleHomburgerMenu((c) => !c);
+  };
+
   return (
     <header className="header">
-      <div className="flex flex-row justify-between my-5 mx-6">
+      <div className="flex flex-row justify-between my-5 mx-16">
         <a className="header flex flex-row items-center gap-3" href="/">
           <span>
             <img src={Storefront} alt="logo" />
           </span>
           <h1 className="font-semibold text-xl ">NFT Marketplace</h1>
         </a>
-        <nav>
-          <ul className="flex flex-row gap-6 items-center">
+
+        <nav className="nav ">
+          <section className="flex-col xl:hidden">
+            {isToggleHomburgerMenu ? (
+              <>
+                <ul className="flex flex-col absolute right-16 bg-background-gray p-3 rounded-lg">
+                  <li className="flex justify-end">
+                    <button onClick={handleHomburgerMenu}>
+                      <img src={ArrowRight} alt="ArrowRight" />
+                    </button>
+                  </li>
+                  <li className="">
+                    <Button variant="outline">
+                      <a
+                        href="/marketplace"
+                        className="font-semibold text-base"
+                      >
+                        MarketPlace
+                      </a>
+                    </Button>
+                  </li>
+                  <li>
+                    <Button variant="outline">
+                      <a
+                        href="/marketplace"
+                        className="font-semibold text-base"
+                      >
+                        MarketPlace
+                      </a>
+                    </Button>
+                  </li>
+                  <li>
+                    <Button variant="outline">
+                      <a
+                        href="/marketplace"
+                        className="font-semibold text-base"
+                      >
+                        MarketPlace
+                      </a>
+                    </Button>
+                  </li>
+                  <li>
+                    <Button variant="outline">
+                      <a
+                        href="/marketplace"
+                        className="font-semibold text-base"
+                      >
+                        MarketPlace
+                      </a>
+                    </Button>
+                  </li>
+                </ul>
+              </>
+            ) : (
+              <div>
+                <button onClick={handleHomburgerMenu}>
+                  <img src={HomburgerMenu} alt="HomburgerMenu" />
+                </button>
+              </div>
+            )}
+          </section>
+          <ul className="flex-row items-center hidden xl:flex">
             <li>
-              <a href="/marketplace" className="font-medium text-sm">
-                MarketPlace
-              </a>
+              <Button variant="ghost">
+                <a href="/marketplace" className="font-semibold text-base">
+                  MarketPlace
+                </a>
+              </Button>
             </li>
             <li>
-              <a href="/rankings" className="font-medium text-sm">
-                Rankings
-              </a>
+              <Button variant="ghost">
+                <a href="/rankings" className="font-semibold text-base">
+                  Rankings
+                </a>
+              </Button>
             </li>
             <li>
-              <a href="/connectWallet" className="font-medium text-sm">
-                Connect a Wallet
-              </a>
+              <Button variant="ghost">
+                <a href="/connectWallet" className="font-semibold text-base">
+                  Connect a Wallet
+                </a>
+              </Button>
             </li>
             <li className="flex items-center gap-2">
               <Button variant="default">
                 <svg
-                className="user-icon"
+                  className="user-icon"
                   viewBox="0 0 32 32"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +126,7 @@ export function Header() {
                     fill="white"
                   />
                 </svg>
-                <span className="font-medium text-sm">Sign Up</span>
+                <span className="font-semibold text-base">Sign Up</span>
               </Button>
             </li>
           </ul>
