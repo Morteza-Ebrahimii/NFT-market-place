@@ -1,7 +1,10 @@
 import {Header} from "../components/Header";
 
-export function HomePage(){
+interface HomePageProps {
+    setIsToggleHomburgerMenu: (isToggleHomburgerMenu: boolean) => void;
+}
+export function HomePage({ setIsToggleHomburgerMenu }: HomePageProps){
     return (
-        <Header />
+        <Header  setIsToggleHomburgerMenu={setIsToggleHomburgerMenu} />
     )
 }

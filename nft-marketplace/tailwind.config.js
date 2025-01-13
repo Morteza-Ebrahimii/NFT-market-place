@@ -22,6 +22,7 @@ module.exports = {
         "background-gray": "#3B3B3B",
         "label-text": "#858584",
         "caption": "#858584",
+        "purple": "#A259FF",
       },
     },
   },

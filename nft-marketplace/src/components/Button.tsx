@@ -1,24 +1,28 @@
 import React from "react";
+import clsx from "clsx"; // Import clsx
+
 
 interface ButtonProps {
   variant: "default" | "outline" | 'ghost';
   children: React.ReactNode;
+  className?: string
 }
 
-export const Button: React.FC<ButtonProps> = ({ variant, children }) => {
+export const Button: React.FC<ButtonProps> = ({ variant, children, className }) => {
   const baseStyles =
-    "py-5 px-9 border-none rounded-3xl transform transition-transform hover:scale-95 hover:duration-150 cursor-pointer flex items-center gap-2 ";
+    "py-4 px-7 md:py-5 md:px-9  rounded-3xl transform transition-transform hover:scale-95 hover:duration-150 cursor-pointer flex items-center gap-2 ";
 
   const variants = {
     default:
-      "bg-purple-500 text-white active:purple-600 focus:outline-none focus:ring focus:ring-purple-250",
-    outline: "bg-inherit text-white border-solid rounded-3xl border-purple-500",
-    ghost: "py-4 px-8 bg-transparent text-white border-none",
+      "bg-purple text-white active:purple-600 focus:outline-none focus:ring focus:ring-purple-250",
+    outline: "bg-gray text-white border-solid border-2 rounded-3xl border-purple",
+    ghost: "bg-transparent text-white border-none",
   };
+
 
   const variantStyle = variants[variant] || variants.default;
 
-  const buttonClassNames = `${baseStyles} ${variantStyle}`;
+  const buttonClassNames = clsx(baseStyles, variantStyle, className);
 
   return <button className={buttonClassNames}>{children}</button>;
 };
