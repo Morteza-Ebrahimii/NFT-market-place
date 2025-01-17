@@ -19,6 +19,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'primary-background': '#2b2b2b',
         "background-gray": "#3B3B3B",
         "label-text": "#858584",
         "caption": "#858584",

@@ -5,6 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    font-family: "Work Sans", system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  .header-logo {
+    font-family: "Space Mono", system-ui, sans-serif;
+  }
+}
+
 .svg-icon {
   width: 24px;
   height: 24px;
@@ -21,13 +33,5 @@ body {
   color: white;
 }
 
-@layer base {
-  header {
-    font-family: "Space Mono", system-ui, sans-serif;
-  }
-}
-@layer base {
-  nav {
-    font-family: "Work Sans", system-ui, sans-serif;
-  }
-}
+
+

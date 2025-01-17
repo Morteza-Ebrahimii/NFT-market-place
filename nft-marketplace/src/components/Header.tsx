@@ -16,13 +16,13 @@ export function Header({ setIsToggleHomburgerMenu }: HeaderProps) {
   };
 
   return (
-    <header className="header">
+    <header className="header sticky top-0 bg-primary-background z-20">
       <div className="flex flex-row justify-between py-3 mx-6  md:my-5 md:mx-16">
         <a className="header flex flex-row items-center gap-3 " href="/">
           <span>
             <img src={Storefront} alt="logo" className="w-[20px] xl:w-[30px]" />
           </span>
-          <h1 className="font-semibold text-sm xl:text-xl">NFT Marketplace</h1>
+          <h1 className="header-logo md:font-semibold font-normal text-sm md:text-lg  xl:text-xl">NFT Marketplace</h1>
         </a>
         <Navbar handleHomburgerMenu={handleHomburgerMenu} isToggleHomburgerMenu={isToggleHomburgerMenu} />
       </div>
