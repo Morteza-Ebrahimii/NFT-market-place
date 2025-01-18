@@ -10,7 +10,7 @@ interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({ variant, children, className }) => {
   const baseStyles =
-    "py-4 px-7 md:py-5 md:px-9 rounded-3xl transform transition-transform hover:scale-95 hover:duration-150 cursor-pointer flex items-center gap-2 ";
+    "py-4 px-7 rounded-3xl transform transition-transform hover:scale-95 hover:duration-150 cursor-pointer flex items-center gap-2 ";
 
   const variants = {
     default:

@@ -11,7 +11,7 @@ function App() {
         <div className="xl:hidden fixed inset-0 w-full h-full bg-black/30 z-10"></div>
       ) }
       <Header setIsToggleHomburgerMenu={setIsToggleHomburgerMenu} />
-      <HomePage setIsToggleHomburgerMenu={setIsToggleHomburgerMenu} />
+      <HomePage />
     </div>
   );
 }
