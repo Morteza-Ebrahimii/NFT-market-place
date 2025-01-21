@@ -1,14 +1,15 @@
 import React from "react";
-import clsx from "clsx"; // Import clsx
+import clsx from "clsx";
 
 
 interface ButtonProps {
   variant: "default" | "outline" | 'ghost' | 'HeaderButton';
   children: React.ReactNode;
   className?: string
+  onClick?: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ variant, children, className }) => {
+export const Button: React.FC<ButtonProps> = ({ variant, children, className, onClick }) => {
   const baseStyles =
     "py-4 px-7 rounded-3xl transform transition-transform hover:scale-95 hover:duration-150 cursor-pointer flex items-center gap-2 ";
 
@@ -26,5 +27,5 @@ export const Button: React.FC<ButtonProps> = ({ variant, children, className }) 
 
   const buttonClassNames = clsx(baseStyles, variantStyle, className);
 
-  return <button className={buttonClassNames}>{children}</button>;
+  return <button className={buttonClassNames} onClick={onClick}>{children}</button>;
 };
