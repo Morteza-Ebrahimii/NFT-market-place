@@ -2,7 +2,7 @@ import gif from "../assets/HeroSection/heroanimationtransparentbck-2.gif";
 import { Button } from "../components/Button";
 import { Rocket } from "lucide-react";
 import { data } from "../data/data";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export function HomePage() {
   return (
@@ -62,17 +62,23 @@ function HeroSection() {
 
 function TrendingCollection() {
   const [toggleSeeMore, setToggleSeeMore] = useState(false);
+  const trendingContainerRef = useRef<HTMLDivElement>(null);
+
 
   const trendingItemOne = data[0];
   const trendingItemTwo = data[1];
   const trendingItemThree = data[2];
 
   const handleSeeMore = () => {
+    if (toggleSeeMore && trendingContainerRef.current) {
+      trendingContainerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
     setToggleSeeMore((prev) => !prev);
   };
 
   return (
-    <section className="container mx-auto px-6 py-6 max-w-sm md:max-w-3xl xl:max-w-5xl">
+    <section className="container mx-auto px-6 py-6 max-w-sm md:max-w-3xl xl:max-w-5xl"
+    ref={trendingContainerRef}>
       <div className="flex flex-col gap-2 py-5 md:py-10 xl:py-20">
         <h2 className="text-2xl md:text-3xl xl:text-5xl font-bold">
           Trending Collection
@@ -113,7 +119,7 @@ function TrendingCollection() {
 
         {toggleSeeMore && (
           <>
-            <div className="container md:hidden py-5 xl:py-1 transition-opacity duration-500">
+            <div className="container md:hidden py-5 xl:py-1 transition-all duration-500 opacity-100 transform scale-100">
               <div>
                 <img src={trendingItemTwo.largeImage} alt="largeImage" />
               </div>
@@ -142,7 +148,7 @@ function TrendingCollection() {
               </div>
             </div>
 
-            <div className="container md:hidden py-5 xl:py-1 transition-opacity duration-500">
+            <div className="container md:hidden py-5 xl:py-1 transition-all duration-500 opacity-100 transform scale-100">
               <div className="">
                 <img src={trendingItemThree.largeImage} alt="test" />
               </div>
