@@ -3,14 +3,13 @@ import { Button } from "../components/Button";
 import { Rocket } from "lucide-react";
 import { data } from "../data/data";
 import { useState, useRef } from "react";
+import {Link} from 'react-router-dom'
 
 export function HomePage() {
   return (
     <>
       <HeroSection />
-      <section>
-        <TrendingCollection />
-      </section>
+      <TrendingCollection />
     </>
   );
 }
@@ -31,13 +30,15 @@ function HeroSection() {
         <div className="py-4 md:hidden">
           <img src={gif} alt="hero-section" loading="lazy" />
         </div>
-        <Button
-          variant="HeaderButton"
-          className="md:py-3 md:px-6 md:w-2/3 md:h-12 my-3 md:rounded-2xl justify-self-center xl:w-1/2 xl:h-1 xl:px-5 xl:py-4 xl:rounded-xl"
-        >
-          <Rocket className="xl:w-3" />
-          <h2 className="md:text-xs xl:text-[10px]">Get started</h2>
-        </Button>
+        <Link to="/signUp">
+          <Button
+            variant="HeaderButton"
+            className="w-full max-w-sm md:py-3 md:px-6 md:w-2/3 md:h-12 my-3 md:rounded-2xl justify-self-start xl:w-1/2 xl:h-1 xl:px-5 xl:py-4 xl:rounded-xl"
+          >
+            <Rocket className="xl:w-3" />
+            <h2 className="md:text-xs xl:text-[10px]">Get started</h2>
+          </Button>
+        </Link>
         <div className="flex flex-row gap-5 justify-center mt-4">
           <div className="text-center">
             <h2 className="font-semibold text-lg">240K+</h2>
@@ -64,7 +65,6 @@ function TrendingCollection() {
   const [toggleSeeMore, setToggleSeeMore] = useState(false);
   const trendingContainerRef = useRef<HTMLDivElement>(null);
 
-
   const trendingItemOne = data[0];
   const trendingItemTwo = data[1];
   const trendingItemThree = data[2];
@@ -77,8 +77,10 @@ function TrendingCollection() {
   };
 
   return (
-    <section className="container mx-auto px-6 py-6 max-w-sm md:max-w-3xl xl:max-w-5xl"
-    ref={trendingContainerRef}>
+    <section
+      className="container mx-auto px-6 py-6 max-w-sm md:max-w-3xl xl:max-w-5xl"
+      ref={trendingContainerRef}
+    >
       <div className="flex flex-col gap-2 py-5 md:py-10 xl:py-20">
         <h2 className="text-2xl md:text-3xl xl:text-5xl font-bold">
           Trending Collection
@@ -89,7 +91,6 @@ function TrendingCollection() {
       </div>
 
       <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-
         <div className="container py-5 xl:py-1">
           <div>
             <img src={trendingItemOne.largeImage} alt="largeImage" />

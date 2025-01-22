@@ -1,5 +1,6 @@
 import { Button } from "./Button";
-import { Menu, UserRoundPlus, ArrowRight    } from 'lucide-react'
+import { Link } from "react-router-dom";
+import { Menu, UserRoundPlus, ArrowRight } from "lucide-react";
 
 interface MenuItem {
   label: string;
@@ -8,8 +9,8 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   { label: "MarketPlace", href: "/marketplace" },
   { label: "Rankings", href: "/rankings" },
-  { label: "Connect a Wallet", href: "/ConnectWallet" },
-  { label: "Sign Up", href: "/SignUp" },
+  { label: "Connect a Wallet", href: "/connectWallet" },
+  { label: "Sign Up", href: "/signUp" },
 ];
 
 interface NavbarProps {
@@ -27,18 +28,19 @@ export const Navbar = ({
           <ul className="flex flex-col right-5 p-2 top-12 absolute bg-background-gray rounded-lg gap-3 md:right-16 md:p-3 z-20">
             <li className="flex justify-end">
               <button onClick={handleHomburgerMenu}>
-                <ArrowRight   />
+                <ArrowRight />
               </button>
             </li>
             {menuItems.map((item) => (
               <li key={item.label}>
                 <Button
+                  onClick={handleHomburgerMenu}
                   variant="outline"
                   className="md:w-[175px] md:h-[65px] w-[160px] h-[58px] justify-center text-center"
                 >
-                  <a href={item.href} className="font-semibold text-base">
+                  <Link to={item.href} className="font-semibold text-base">
                     {item.label}
-                  </a>
+                  </Link>
                 </Button>
               </li>
             ))}
@@ -59,17 +61,17 @@ export const Navbar = ({
               className={`${index === 3 ? "flex items-center gap-2" : ""}`}
             >
               {item.label === "Sign Up" ? (
-                <a href="/SignUp" className="font-semibold text-base">
+                <Link to="/SignUp" className="font-semibold text-base">
                   <Button variant="default">
                     <UserRoundPlus />
                     <span>Sign Up</span>
                   </Button>
-                </a>
+                </Link>
               ) : (
                 <Button variant="ghost">
-                  <a href={item.href} className="font-semibold text-base">
+                  <Link to={item.href} className="font-semibold text-base">
                     {item.label}
-                  </a>
+                  </Link>
                 </Button>
               )}
             </li>
