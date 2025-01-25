@@ -5,7 +5,6 @@ export { useArtistContext } from "../context/ArtistContext";
 
 export function Ranking() {
   const { artists } = useArtistContext();
-  const [isActive, setisActive] = useState<string | undefined>(undefined);
 
   const timeLine = [
     { time: "1d", name: "Today" },
@@ -13,6 +12,9 @@ export function Ranking() {
     { time: "30d", name: "This Month" },
     { time: "All Time", name: "All Time" },
   ];
+  const [isActive, setisActive] = useState<string | undefined>(
+    timeLine[0].name
+  );
 
   return (
     <div className="container  mx-auto px-6 py-6 max-w-sm md:max-w-3xl xl:max-w-5xl xl:py-10">
@@ -36,7 +38,9 @@ export function Ranking() {
             onClick={() => setisActive(time.name)}
           >
             <h3 className="px-5 py-4 md:hidden">{time.time}</h3>
-            <h3 className="px-12 xl:px-18 py-4  hidden md:block ">{time.name}</h3>
+            <h3 className="px-12 xl:px-18 py-4  hidden md:block ">
+              {time.name}
+            </h3>
           </div>
         ))}
       </div>
