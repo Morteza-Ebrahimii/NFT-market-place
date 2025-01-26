@@ -1,16 +1,20 @@
 import React, { createContext, useState, useContext } from "react";
 import { artistData } from "../data/data";
 
-interface Artist {
+type artist = {
   id: number;
   name: string;
-  bio: string;
+  change: number;
+  balence: string;
+  nftsSold: number;
+  volume: number;
   image: string;
-}
+  bio: string;
+};
 
 interface ArtistContextProps {
-  artists: Artist[];
-  getArtistById: (id: number) => Artist | undefined;
+  artists: artist[];
+  getArtistById: (id: number) => artist | undefined;
 }
 const artistContext = createContext<ArtistContextProps | undefined>(undefined);
 

@@ -1,4 +1,15 @@
 import { useState } from "react";
+
+type Artist = {
+  id: number;
+  name: string;
+  change: number;
+  balence: string;
+  nftsSold: number;
+  volume: number;
+  image: string;
+  bio: string;
+};
 import { useArtistContext } from "../context/ArtistContext";
 
 export function Ranking() {
@@ -25,6 +36,7 @@ export function Ranking() {
           Check out top ranking NFT artists on the NFT Marketplace.
         </p>
       </div>
+
       {/* timeline */}
       <div className="flex flex-row text-center justify-between py-1 md:py-5 my-5 text-label-text">
         {timeLine.map((time) => (
@@ -44,8 +56,9 @@ export function Ranking() {
           </div>
         ))}
       </div>
+
       {/* filter section */}
-      <div className="flex flex-row justify-between items-center border rounded-3xl border-solid border-background-gray w-full h-10 md:h-12 text-label-text">
+      <div className="flex flex-row justify-between items-center border rounded-3xl border-solid border-background-gray w-full h-10 md:h-12 text-label-text change-numbers-font">
         <div className="flex flex-row p-4 gap-3 xl:gap-8 md:gap-6 ml-2 xl:ml-5 md:ml-3 md:text-lg text-xs">
           <p>#</p>
           <p>Artist</p>
@@ -56,6 +69,54 @@ export function Ranking() {
           <p>Volume</p>
         </div>
       </div>
+
+      {/* artists ranking */}
+      <ArtistsRanking artists={artists} />
+    </div>
+  );
+}
+
+function ArtistsRanking({ artists }: { artists: Artist[] }) {
+  return (
+    <div className="flex flex-col gap-4 md:gap-5 mt-4">
+      {artists.map((artist, index) => (
+        <div key={index} className="flex flex-col gap-1">
+          <div className="flex flex-row justify-between items-center w-full bg-background-gray py-3 md:py-4  px-2 xl:px-4 rounded-3xl md:rounded-2xl ">
+            <div className="flex flex-row items-center gap-2 xl:gap-4">
+              <div className="change-numbers-font text-label-text text-[10px] md:text-base md:mx-2 xl:mr-4 xl:ml-1 xl:bg-primary-background rounded-full xl:py-1 px-2 xl:px-3 ">
+                {artist.id}
+              </div>
+              <div>
+                <img
+                  className="size-5 md:size-6 xl:size-14"
+                  src={artist.image}
+                  alt={`${artist.id}`}
+                />
+              </div>
+              <div className="text-sm md:text-xl md:font-semibold xl:font-bold ">
+                {artist.name}
+              </div>
+            </div>
+            <div className="flex flex-row items-center md:justify-between  xl:justify-around md:w-1/3 xl:w-3/5 ">
+              <div
+                className={`change-numbers-font hidden md:block md:text-base ${
+                  artist.balence === "negetive"
+                    ? "text-red-600"
+                    : "text-green-600"
+                }`}
+              >
+                {artist.change}%
+              </div>
+              <div className="change-numbers-font hidden xl:block text-base">
+                {artist.nftsSold}
+              </div>
+              <div className="text-[11px] font-thin change-numbers-font md:text-base mr-4 md:mr-10 xl:mr-0 ">
+                {artist.volume} ETH
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

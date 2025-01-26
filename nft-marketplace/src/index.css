@@ -12,7 +12,10 @@
 }
 
 @layer base {
-  .header-logo {
+  .header-logo  {
+    font-family: "Space Mono", system-ui, sans-serif;
+  }
+  .change-numbers-font  {
     font-family: "Space Mono", system-ui, sans-serif;
   }
 }
