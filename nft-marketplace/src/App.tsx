@@ -7,6 +7,7 @@ import { MarketPlace } from "./pages/Marketplace";
 import { SignUp } from "./pages/SignUp";
 import { Ranking } from "./pages/Rankings";
 import { ArtistProvider } from "./context/ArtistContext";
+import { ArtistProfile } from "./pages/ArtistProfile";
 
 function App() {
   const [isToggleHomburgerMenu, setIsToggleHomburgerMenu] = useState(false);
@@ -22,9 +23,10 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/marketplace" element={<MarketPlace />} />
-            <Route path="/rankings" element={<Ranking />} />
             <Route path="/connectWallet" element={<ConectWallet />} />
             <Route path="/signUp" element={<SignUp />} />
+            <Route path="/rankings" element={<Ranking />} />
+            <Route path="/rankings/:id" element={<ArtistProfile />} />
           </Routes>
         </div>
       </ArtistProvider>

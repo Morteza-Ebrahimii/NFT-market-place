@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { useArtistContext } from "../context/ArtistContext";
+import { timeLine } from "../data/data";
+import { Link } from "react-router-dom";
 
 type Artist = {
   id: number;
@@ -9,18 +12,13 @@ type Artist = {
   volume: number;
   image: string;
   bio: string;
+  hashaddress: string;
+  followers: number;
 };
-import { useArtistContext } from "../context/ArtistContext";
 
 export function Ranking() {
   const { artists } = useArtistContext();
 
-  const timeLine = [
-    { time: "1d", name: "Today" },
-    { time: "7d", name: "This Week" },
-    { time: "30d", name: "This Month" },
-    { time: "All Time", name: "All Time" },
-  ];
   const [isActive, setisActive] = useState<string | undefined>(
     timeLine[0].name
   );
@@ -78,10 +76,13 @@ export function Ranking() {
 
 function ArtistsRanking({ artists }: { artists: Artist[] }) {
   return (
-    <div className="flex flex-col gap-4 md:gap-5 mt-4">
+    <ul className="flex flex-col gap-4 md:gap-5 mt-4">
       {artists.map((artist, index) => (
-        <div key={index} className="flex flex-col gap-1">
-          <div className="flex flex-row justify-between items-center w-full bg-background-gray py-3 md:py-4  px-2 xl:px-4 rounded-3xl md:rounded-2xl ">
+        <li key={index} className="flex flex-col gap-1">
+          <Link
+            to={`/rankings/${artist.id}`}
+            className="flex flex-row justify-between items-center w-full bg-background-gray py-3 md:py-4  px-2 xl:px-4 rounded-3xl md:rounded-2xl "
+          >
             <div className="flex flex-row items-center gap-2 xl:gap-4">
               <div className="change-numbers-font text-label-text text-[10px] md:text-base md:mx-2 xl:mr-4 xl:ml-1 xl:bg-primary-background rounded-full xl:py-1 px-2 xl:px-3 ">
                 {artist.id}
@@ -101,10 +102,11 @@ function ArtistsRanking({ artists }: { artists: Artist[] }) {
               <div
                 className={`change-numbers-font hidden md:block md:text-base ${
                   artist.balence === "negetive"
-                    ? "text-red-600"
+                    ? "text-red-500"
                     : "text-green-600"
                 }`}
               >
+                {artist.balence === "negetive" ? "-" : "+"}
                 {artist.change}%
               </div>
               <div className="change-numbers-font hidden xl:block text-base">
@@ -114,9 +116,9 @@ function ArtistsRanking({ artists }: { artists: Artist[] }) {
                 {artist.volume} ETH
               </div>
             </div>
-          </div>
-        </div>
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

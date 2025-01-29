@@ -10,6 +10,8 @@ type artist = {
   volume: number;
   image: string;
   bio: string;
+  hashaddress: string;
+  followers: number;
 };
 
 interface ArtistContextProps {
