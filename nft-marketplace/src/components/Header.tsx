@@ -17,7 +17,7 @@ export function Header({ setIsToggleHomburgerMenu }: HeaderProps) {
   };
 
   return (
-    <header className="header sticky top-0 bg-primary-background z-20">
+    <header className="header sticky top-0 bg-primary-background z-20 opacity-[.95]">
       <div className="flex flex-row justify-between py-3 mx-6  md:my-5 md:mx-16">
         <Link className="header flex flex-row items-center gap-3 " to="/">
           <span>
