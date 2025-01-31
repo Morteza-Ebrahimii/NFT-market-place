@@ -37,9 +37,7 @@ export function ArtistProfile() {
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          <div
-            className="max-w-sm  px-8 md:px-0"
-          >
+          <div className="max-w-sm  px-8 md:px-0">
             <div className="w-full flex flex-col xl:flex-row  gap-2 md:gap-4  xl:gap-64 my-1 md:my-2 ">
               <span className="text-2xl md:text-4xl xl:text-5xl font-semibold  my-5 xl:min-w-96">
                 {artist.name}
@@ -67,32 +65,38 @@ export function ArtistProfile() {
                 </Button>
               </div>
             </div>
-            <div className="flex flex-row gap-5 justify-center mt-4">
+            <div className="flex flex-row gap-6  xl:gap-2 justify-between mt-6 md:mt-8 xl:mt-6 mb-3 md:mb-5 xl:w-[30rem]">
               <div className="text-center">
-                <h2 className="font-semibold text-lg">{artist.volume}K +</h2>
-                <p>Volume</p>
+                <h2 className="font-semibold text-lg md:text-2xl xl:text-3xl">
+                  {artist.volume}K +
+                </h2>
+                <p className="text-sm md:text-base xl:text-xl">Volume</p>
               </div>
               <div className="text-center">
-                <h2 className="font-semibold text-lg">{artist.nftsSold}K +</h2>
-                <p>NFT Sold</p>
+                <h2 className="font-semibold text-lg md:text-2xl xl:text-3xl">
+                  {artist.nftsSold}K +
+                </h2>
+                <p className="text-sm md:text-base xl:text-xl">NFT Sold</p>
               </div>
               <div className="text-center">
-                <h2 className="font-semibold text-lg">{artist.followers}K +</h2>
-                <p>Followers</p>
+                <h2 className="font-semibold text-lg md:text-2xl xl:text-3xl">
+                  {artist.followers}K +
+                </h2>
+                <p className="text-sm md:text-base xl:text-xl">Followers</p>
               </div>
             </div>
-            <div className="bio">
-              <h3>Bio</h3>
-              <p>{artist.bio}</p>
+            <div className="bio xl:mb-6 xl:mt-8">
+              <h3 className="text-label-text my-2 mt-5 md:text-lg xl:text-2xl xl:font-bold">Bio</h3>
+              <p className="text-sm md:text-base xl:text-xl  ">{artist.bio}</p>
             </div>
-            <div className="link">
-              <h3>Links</h3>
-              <div>
-                <Globe />
-                <Youtube />
-                <Twitter />
-                <Instagram />
-                <Linkedin />
+            <div className="mb-5">
+              <h3 className="text-label-text mt-5 mb-1 xl:mb-3 md:text-lg xl:text-2xl xl:font-bold">Links</h3>
+              <div className="flex flex-row text-label-text gap-2 ">
+                <Globe className="size-5 md:size-6 xl:size-7" />
+                <Youtube  className="size-5 md:size-6 xl:size-7" />
+                <Twitter  className="size-5 md:size-6 xl:size-7" />
+                <Instagram  className="size-5 md:size-6 xl:size-7" />
+                <Linkedin  className="size-5 md:size-6 xl:size-7" />
               </div>
             </div>
           </div>
