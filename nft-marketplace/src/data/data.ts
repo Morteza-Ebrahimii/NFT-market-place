@@ -53,7 +53,7 @@ export const artistData = [
     volume: 23.6,
     image: "/src/assets/ArtistsData/Avatar Placeholder-1.png",
     bio: "Jayden is a digital artist specializing in abstract landscapes inspired by sci-fi and futuristic themes.",
-    hashaddress: '0xc0E3...B79C',
+    hashaddress: "0xc0E3...B79C",
     followers: 75423,
   },
   {
@@ -65,7 +65,7 @@ export const artistData = [
     volume: 30.1,
     image: "/src/assets/ArtistsData/Avatar Placeholder-2.png",
     bio: "Sophia blends surrealism and portrait art to explore emotional storytelling in her NFTs.",
-    hashaddress: '8sadc0E3...B79C',
+    hashaddress: "8sadc0E3...B79C",
     followers: 75374,
   },
   {
@@ -77,7 +77,7 @@ export const artistData = [
     volume: 15.2,
     image: "/src/assets/ArtistsData/Avatar Placeholder-3.png",
     bio: "Liam creates 3D animated NFT art with themes of space exploration and human connection.",
-    hashaddress: '0adc0E3...B79C',
+    hashaddress: "0adc0E3...B79C",
     followers: 57354,
   },
   {
@@ -89,7 +89,7 @@ export const artistData = [
     volume: 22.5,
     image: "/src/assets/ArtistsData/Avatar Placeholder-4.png",
     bio: "Olivia is a contemporary artist known for blending traditional watercolor techniques with digital mediums.",
-    hashaddress: '4sdc0E3...B79C',
+    hashaddress: "4sdc0E3...B79C",
     followers: 4375,
   },
   {
@@ -101,7 +101,7 @@ export const artistData = [
     volume: 40.9,
     image: "/src/assets/ArtistsData/Avatar Placeholder-5.png",
     bio: "Ethan focuses on urban street art and brings it into the NFT space through bold and vibrant works.",
-    hashaddress: 'sd50E3...B79C',
+    hashaddress: "sd50E3...B79C",
     followers: 6544,
   },
   {
@@ -113,7 +113,7 @@ export const artistData = [
     volume: 18.8,
     image: "/src/assets/ArtistsData/Avatar Placeholder-6.png",
     bio: "Mia creates dreamlike illustrations that explore themes of nature, spirituality, and fantasy.",
-    hashaddress: 'a60E3...B79C',
+    hashaddress: "a60E3...B79C",
     followers: 45345,
   },
   {
@@ -125,7 +125,7 @@ export const artistData = [
     volume: 24.5,
     image: "/src/assets/ArtistsData/Avatar Placeholder-7.png",
     bio: "Noah’s NFTs combine glitch art and cyberpunk aesthetics to reflect on the digital age.",
-    hashaddress: 'adsc0E3...B79C',
+    hashaddress: "adsc0E3...B79C",
     followers: 75374,
   },
   {
@@ -137,7 +137,7 @@ export const artistData = [
     volume: 31.6,
     image: "/src/assets/ArtistsData/Avatar Placeholder-8.png",
     bio: "Isabella specializes in colorful pop art with cultural and social commentary.",
-    hashaddress: '0d60E3...B79C',
+    hashaddress: "0d60E3...B79C",
     followers: 7574,
   },
   {
@@ -149,7 +149,7 @@ export const artistData = [
     volume: 12.8,
     image: "/src/assets/ArtistsData/Avatar Placeholder-9.png",
     bio: "Lucas’ work features minimalistic designs focused on geometry and symmetry.",
-    hashaddress: '3dc0E3...B79C',
+    hashaddress: "3dc0E3...B79C",
     followers: 73787,
   },
   {
@@ -161,7 +161,7 @@ export const artistData = [
     volume: 19.6,
     image: "/src/assets/ArtistsData/Avatar Placeholder-10.png",
     bio: "Amelia is a 3D artist combining Eastern influences with futuristic architecture.",
-    hashaddress: '6lc0E3...B79C',
+    hashaddress: "6lc0E3...B79C",
     followers: 56434,
   },
   {
@@ -173,7 +173,7 @@ export const artistData = [
     volume: 29.5,
     image: "/src/assets/ArtistsData/Avatar Placeholder-11.png",
     bio: "Elijah creates NFT collectibles inspired by comic books and action-packed stories.",
-    hashaddress: '6ac0E3...B79C',
+    hashaddress: "6ac0E3...B79C",
     followers: 45345,
   },
   {
@@ -185,7 +185,7 @@ export const artistData = [
     volume: 21.1,
     image: "/src/assets/ArtistsData/Avatar Placeholder-12.png",
     bio: "Ava’s work bridges technology and fine art with her immersive light-based installations.",
-    hashaddress: '0jk0E3...B79C',
+    hashaddress: "0jk0E3...B79C",
     followers: 45345,
   },
   {
@@ -197,7 +197,7 @@ export const artistData = [
     volume: 25.2,
     image: "/src/assets/ArtistsData/Avatar Placeholder-13.png",
     bio: "Henry creates hand-drawn digital sketches influenced by nature and travel.",
-    hashaddress: '0py0E3...B79C',
+    hashaddress: "0py0E3...B79C",
     followers: 45345,
   },
   {
@@ -209,7 +209,7 @@ export const artistData = [
     volume: 17.6,
     image: "/src/assets/ArtistsData/Avatar Placeholder-14.png",
     bio: "Emma’s art focuses on vibrant color palettes to evoke joy and positivity.",
-    hashaddress: '4lc0E3...B79C',
+    hashaddress: "4lc0E3...B79C",
     followers: 45345,
   },
   {
@@ -221,7 +221,7 @@ export const artistData = [
     volume: 26.8,
     image: "/src/assets/ArtistsData/Avatar Placeholder-15.png",
     bio: "Jack specializes in generative art, using code to create intricate patterns.",
-    hashaddress: '4oc0E3...B79C',
+    hashaddress: "4oc0E3...B79C",
     followers: 45345,
   },
   {
@@ -233,7 +233,7 @@ export const artistData = [
     volume: 20.7,
     image: "/src/assets/ArtistsData/Avatar Placeholder-16.png",
     bio: "Sophia’s NFTs focus on abstract expressions of movement and energy.",
-    hashaddress: '0dc0E3...B79C',
+    hashaddress: "0dc0E3...B79C",
     followers: 453453,
   },
   {
@@ -245,7 +245,7 @@ export const artistData = [
     volume: 22.4,
     image: "/src/assets/ArtistsData/Avatar Placeholder-17.png",
     bio: "Mason creates cinematic animations that bring storytelling into the NFT space.",
-    hashaddress: '0xc0E3...B79C',
+    hashaddress: "0xc0E3...B79C",
     followers: 3453,
   },
   {
@@ -257,7 +257,7 @@ export const artistData = [
     volume: 28.6,
     image: "/src/assets/ArtistsData/Avatar Placeholder-18.png",
     bio: "Harper merges Japanese art traditions with modern digital illustration.",
-    hashaddress: '0xc0E3...B79C',
+    hashaddress: "0xc0E3...B79C",
     followers: 43534,
   },
   {
@@ -269,7 +269,7 @@ export const artistData = [
     volume: 33.5,
     image: "/src/assets/ArtistsData/Avatar Placeholder-19.png",
     bio: "Daniel is a photographer who transforms urban landscapes into captivating digital artworks.",
-    hashaddress: '0xc0E3...B79C',
+    hashaddress: "0xc0E3...B79C",
     followers: 45354,
   },
   {
@@ -281,14 +281,161 @@ export const artistData = [
     volume: 27.2,
     image: "/src/assets/ArtistsData/Avatar Placeholder-20.png",
     bio: "Ella’s NFTs explore identity and self-expression through surreal portraiture.",
-    hashaddress: '0xc0E3...B79C',
+    hashaddress: "0xc0E3...B79C",
     followers: 45354,
   },
 ];
 
 export const timeLine = [
-    { time: "1d", name: "Today" },
-    { time: "7d", name: "This Week" },
-    { time: "30d", name: "This Month" },
-    { time: "All Time", name: "All Time" },
-  ];
+  { time: "1d", name: "Today" },
+  { time: "7d", name: "This Week" },
+  { time: "30d", name: "This Month" },
+  { time: "All Time", name: "All Time" },
+];
+
+export const nftData = [
+  {
+    id: 1,
+    name: "Ethereal Dream",
+    price: 2.5,
+    highest_bid: 2.3,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder.png",
+
+    minted_on: "Feb 12, 2023",
+    description:
+      "A mesmerizing digital artwork that captures the essence of an ethereal dream, blending futuristic aesthetics with surreal imagination.",
+    websites: [
+      "https://fake-nft-marketplace1.com",
+      "https://fake-nft-marketplace2.com",
+    ],
+    categories: ["Art", "Collectibles", "Music", "Virtual Worlds"],
+  },
+  {
+    id: 2,
+    name: "Cyber Pulse",
+    price: 3.2,
+    highest_bid: 3.0,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-1.png",
+
+    minted_on: "Mar 5, 2023",
+    description:
+      "An electrifying fusion of neon lights and futuristic cyberpunk aesthetics, capturing the pulse of a digital metropolis.",
+    websites: [
+      "https://fake-nft-marketplace1.com",
+      "https://fake-nft-marketplace3.com",
+    ],
+    categories: ["Art", "Video", "Virtual Worlds", "Sport"],
+  },
+  {
+    id: 3,
+    name: "Mystic Mirage",
+    price: 4.1,
+    highest_bid: 3.8,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-2.png",
+
+    minted_on: "Jan 20, 2023",
+    description:
+      "A surreal artwork that distorts the perception of space and time, creating an illusion of a never-ending dream.",
+    websites: [
+      "https://fake-nft-marketplace2.com",
+      "https://fake-nft-marketplace4.com",
+    ],
+    categories: ["Art", "Photography", "Music", "Virtual Worlds"],
+  },
+  {
+    id: 4,
+    name: "Galactic Symphony",
+    price: 5.0,
+    highest_bid: 4.7,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-3.png",
+
+    minted_on: "Apr 10, 2023",
+    description:
+      "A mesmerizing blend of cosmic colors and celestial harmonies, bringing the symphony of the universe to life.",
+    websites: [
+      "https://fake-nft-marketplace1.com",
+      "https://fake-nft-marketplace5.com",
+    ],
+    categories: ["Music", "Art", "Sport", "Virtual Worlds"],
+  },
+  {
+    id: 5,
+    name: "Neon Samurai",
+    price: 6.5,
+    highest_bid: 6.2,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-4.png",
+
+    minted_on: "May 3, 2023",
+    description:
+      "A cybernetic warrior glowing in neon lights, blending ancient samurai tradition with futuristic innovation.",
+    websites: [
+      "https://fake-nft-marketplace3.com",
+      "https://fake-nft-marketplace5.com",
+    ],
+    categories: ["Art", "Sport", "Music", "Virtual Worlds"],
+  },
+  {
+    id: 6,
+    name: "Echoes of Eternity",
+    price: 7.3,
+    highest_bid: 7.0,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-5.png",
+
+    minted_on: "Jun 15, 2023",
+    description:
+      "A dreamlike landscape where time stands still, reflecting the echoes of memories lost in eternity.",
+    websites: [
+      "https://fake-nft-marketplace2.com",
+      "https://fake-nft-marketplace4.com",
+    ],
+    categories: ["Art", "Photography", "Music", "Sport"],
+  },
+  {
+    id: 7,
+    name: "Infinity Glitch",
+    price: 3.8,
+    highest_bid: 3.5,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-6.png",
+
+    minted_on: "Jul 8, 2023",
+    description:
+      "A mesmerizing digital distortion, where reality breaks apart into an infinite cascade of glitches and colors.",
+    websites: [
+      "https://fake-nft-marketplace3.com",
+      "https://fake-nft-marketplace6.com",
+    ],
+    categories: ["Art", "Video", "Virtual Worlds", "Sport"],
+  },
+  {
+    id: 8,
+    name: "Solar Echo",
+    price: 4.7,
+    highest_bid: 4.5,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-7.png",
+
+    minted_on: "Aug 22, 2023",
+    description:
+      "A radiant explosion of solar energy captured in an abstract masterpiece, echoing the power of the sun.",
+    websites: [
+      "https://fake-nft-marketplace1.com",
+      "https://fake-nft-marketplace6.com",
+    ],
+    categories: ["Art", "Photography", "Music", "Virtual Worlds"],
+  },
+  {
+    id: 9,
+    name: "Lunar Serenity",
+    price: 6.1,
+    highest_bid: 5.9,
+    image: "/src/assets/Nft`sArtistData/Image Placeholder-8.png",
+
+    minted_on: "Oct 10, 2023",
+    description:
+      "A tranquil digital painting of a moonlit night, evoking a sense of peace and cosmic wonder.",
+    websites: [
+      "https://fake-nft-marketplace2.com",
+      "https://fake-nft-marketplace5.com",
+    ],
+    categories: ["Art", "Music", "Photography", "Virtual Worlds"],
+  },
+];

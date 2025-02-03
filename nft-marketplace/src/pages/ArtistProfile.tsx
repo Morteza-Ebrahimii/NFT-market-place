@@ -1,7 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useArtistContext } from "../context/ArtistContext";
 import backgroundImage from "../assets/ArtistsData/ImagePlaceHolder.png";
 import { Button } from "../components/Button";
+import { useNftContext } from "../context/NftContext";
+import { useState } from "react";
 import {
   Copy,
   Globe,
@@ -12,16 +14,26 @@ import {
   Youtube,
 } from "lucide-react";
 
+const categoriesOfNft = [
+  { name: "Created"},
+  { name: "Owned"},
+  { name: "Collection"},
+];
+
 export function ArtistProfile() {
+  const [isActive, setisActive] = useState("Created");
   const { id } = useParams<{ id: string }>();
   const { getArtistById } = useArtistContext();
+  const { nftCards } = useNftContext();
   const artist = getArtistById(Number(id));
 
   if (!artist) {
     return <div>Artist not found</div>;
   }
+
   return (
     <>
+      {/* artist profile */}
       <div className="relative ">
         <div
           className="h-52 md:h-64 lg:h-80 bg-center bg-cover "
@@ -86,20 +98,70 @@ export function ArtistProfile() {
               </div>
             </div>
             <div className="bio xl:mb-6 xl:mt-8">
-              <h3 className="text-label-text my-2 mt-5 md:text-lg xl:text-2xl xl:font-bold">Bio</h3>
+              <h3 className="text-label-text my-2 mt-5 md:text-lg xl:text-2xl xl:font-bold">
+                Bio
+              </h3>
               <p className="text-sm md:text-base xl:text-xl  ">{artist.bio}</p>
             </div>
             <div className="mb-5">
-              <h3 className="text-label-text mt-5 mb-1 xl:mb-3 md:text-lg xl:text-2xl xl:font-bold">Links</h3>
+              <h3 className="text-label-text mt-5 mb-1 xl:mb-3 md:text-lg xl:text-2xl xl:font-bold">
+                Links
+              </h3>
               <div className="flex flex-row text-label-text gap-2 ">
                 <Globe className="size-5 md:size-6 xl:size-7" />
-                <Youtube  className="size-5 md:size-6 xl:size-7" />
-                <Twitter  className="size-5 md:size-6 xl:size-7" />
-                <Instagram  className="size-5 md:size-6 xl:size-7" />
-                <Linkedin  className="size-5 md:size-6 xl:size-7" />
+                <Youtube className="size-5 md:size-6 xl:size-7" />
+                <Twitter className="size-5 md:size-6 xl:size-7" />
+                <Instagram className="size-5 md:size-6 xl:size-7" />
+                <Linkedin className="size-5 md:size-6 xl:size-7" />
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <hr />
+      {/* Nft cards of artist*/}
+      <div>
+        <div className="flex flex-row text-center justify-between py-1 md:py-5 my-5 text-label-text">
+          {categoriesOfNft.map((category) => (
+            <div
+              key={category.name}
+              className={`font-semibold text-sm xl:text-xl border-b-2 ${
+                isActive === category.name
+                  ? "border-label-text text-white translate-2"
+                  : "border-transparent"
+              }`}
+              onClick={() => setisActive(category.name)}
+            >
+              <h3 className="px-3 py-4 md:hidden">{category.name}</h3>
+              <h3 className="px-12 xl:px-18 py-4  hidden md:block ">
+                {category.name}
+              </h3>
+            </div>
+          ))}
+        </div>
+        <div>
+          {nftCards.map((nft) => (
+            <Link to={`/nft/${nft.id}`} key={nft.id}>
+              <img src={nft.image} alt={nft.name} />
+              <div className="nftName">
+                <h3>{nft.name}</h3>
+              </div>
+              <div className="logo and name">
+                <img src={artist.image} alt={artist.name} />
+                <h3>{artist.name}</h3>
+              </div>
+              <div className="price and bid">
+                <div>
+                  <h3>Price</h3>
+                  <p>{nft.price}</p>
+                </div>
+                <div>
+                  <h3>Highest Bid</h3>
+                  <p>{nft.highest_bid}</p>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </>
