@@ -54,7 +54,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-1.png",
     bio: "Jayden is a digital artist specializing in abstract landscapes inspired by sci-fi and futuristic themes.",
     hashaddress: "0xc0E3...B79C",
-    followers: 75423,
+    followers: 753,
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-2.png",
     bio: "Sophia blends surrealism and portrait art to explore emotional storytelling in her NFTs.",
     hashaddress: "8sadc0E3...B79C",
-    followers: 75374,
+    followers: 774,
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-3.png",
     bio: "Liam creates 3D animated NFT art with themes of space exploration and human connection.",
     hashaddress: "0adc0E3...B79C",
-    followers: 57354,
+    followers: 554,
   },
   {
     id: 4,
@@ -90,7 +90,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-4.png",
     bio: "Olivia is a contemporary artist known for blending traditional watercolor techniques with digital mediums.",
     hashaddress: "4sdc0E3...B79C",
-    followers: 4375,
+    followers: 435,
   },
   {
     id: 5,
@@ -102,7 +102,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-5.png",
     bio: "Ethan focuses on urban street art and brings it into the NFT space through bold and vibrant works.",
     hashaddress: "sd50E3...B79C",
-    followers: 6544,
+    followers: 654,
   },
   {
     id: 6,
@@ -114,7 +114,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-6.png",
     bio: "Mia creates dreamlike illustrations that explore themes of nature, spirituality, and fantasy.",
     hashaddress: "a60E3...B79C",
-    followers: 45345,
+    followers: 455,
   },
   {
     id: 7,
@@ -126,7 +126,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-7.png",
     bio: "Noah’s NFTs combine glitch art and cyberpunk aesthetics to reflect on the digital age.",
     hashaddress: "adsc0E3...B79C",
-    followers: 75374,
+    followers: 754,
   },
   {
     id: 8,
@@ -138,7 +138,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-8.png",
     bio: "Isabella specializes in colorful pop art with cultural and social commentary.",
     hashaddress: "0d60E3...B79C",
-    followers: 7574,
+    followers: 74,
   },
   {
     id: 9,
@@ -150,7 +150,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-9.png",
     bio: "Lucas’ work features minimalistic designs focused on geometry and symmetry.",
     hashaddress: "3dc0E3...B79C",
-    followers: 73787,
+    followers: 787,
   },
   {
     id: 10,
@@ -162,7 +162,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-10.png",
     bio: "Amelia is a 3D artist combining Eastern influences with futuristic architecture.",
     hashaddress: "6lc0E3...B79C",
-    followers: 56434,
+    followers: 34,
   },
   {
     id: 11,
@@ -174,7 +174,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-11.png",
     bio: "Elijah creates NFT collectibles inspired by comic books and action-packed stories.",
     hashaddress: "6ac0E3...B79C",
-    followers: 45345,
+    followers: 445,
   },
   {
     id: 12,
@@ -186,7 +186,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-12.png",
     bio: "Ava’s work bridges technology and fine art with her immersive light-based installations.",
     hashaddress: "0jk0E3...B79C",
-    followers: 45345,
+    followers: 455,
   },
   {
     id: 13,
@@ -198,7 +198,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-13.png",
     bio: "Henry creates hand-drawn digital sketches influenced by nature and travel.",
     hashaddress: "0py0E3...B79C",
-    followers: 45345,
+    followers: 45,
   },
   {
     id: 14,
@@ -210,7 +210,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-14.png",
     bio: "Emma’s art focuses on vibrant color palettes to evoke joy and positivity.",
     hashaddress: "4lc0E3...B79C",
-    followers: 45345,
+    followers: 45,
   },
   {
     id: 15,
@@ -222,7 +222,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-15.png",
     bio: "Jack specializes in generative art, using code to create intricate patterns.",
     hashaddress: "4oc0E3...B79C",
-    followers: 45345,
+    followers: 445,
   },
   {
     id: 16,
@@ -234,7 +234,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-16.png",
     bio: "Sophia’s NFTs focus on abstract expressions of movement and energy.",
     hashaddress: "0dc0E3...B79C",
-    followers: 453453,
+    followers: 453,
   },
   {
     id: 17,
@@ -246,7 +246,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-17.png",
     bio: "Mason creates cinematic animations that bring storytelling into the NFT space.",
     hashaddress: "0xc0E3...B79C",
-    followers: 3453,
+    followers: 53,
   },
   {
     id: 18,
@@ -258,7 +258,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-18.png",
     bio: "Harper merges Japanese art traditions with modern digital illustration.",
     hashaddress: "0xc0E3...B79C",
-    followers: 43534,
+    followers: 434,
   },
   {
     id: 19,
@@ -270,7 +270,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-19.png",
     bio: "Daniel is a photographer who transforms urban landscapes into captivating digital artworks.",
     hashaddress: "0xc0E3...B79C",
-    followers: 45354,
+    followers: 354,
   },
   {
     id: 20,
@@ -282,7 +282,7 @@ export const artistData = [
     image: "/src/assets/ArtistsData/Avatar Placeholder-20.png",
     bio: "Ella’s NFTs explore identity and self-expression through surreal portraiture.",
     hashaddress: "0xc0E3...B79C",
-    followers: 45354,
+    followers: 454,
   },
 ];
 
