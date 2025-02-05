@@ -3,7 +3,7 @@ import { useArtistContext } from "../context/ArtistContext";
 import backgroundImage from "../assets/ArtistsData/ImagePlaceHolder.png";
 import { Button } from "../components/Button";
 import { useNftContext } from "../context/NftContext";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Copy,
   Globe,
@@ -22,14 +22,41 @@ const categoriesOfNft = [
 
 export function ArtistProfile() {
   const [isActive, setisActive] = useState("Created");
+  const [visibleItemCount, setVisibleItemCount] = useState(2);
+  const [showAll, setShowAll] = useState(false);
   const { id } = useParams<{ id: string }>();
   const { getArtistById } = useArtistContext();
   const { nftCards } = useNftContext();
   const artist = getArtistById(Number(id));
+  const cardContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const updateVisibleItemCount = () => {
+      if (window.innerWidth < 640) {
+        setVisibleItemCount(2);
+      } else if (window.innerWidth < 1280) {
+        setVisibleItemCount(4);
+      } else {
+        setVisibleItemCount(6);
+      }
+    };
+
+    window.addEventListener("resize", updateVisibleItemCount);
+    updateVisibleItemCount();
+
+    return () => window.removeEventListener("resize", updateVisibleItemCount);
+  }, []);
 
   if (!artist) {
     return <div>Artist not found</div>;
   }
+
+  const handleShowAll = () => {
+    if (showAll && cardContainerRef.current) {
+      cardContainerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    setShowAll(!showAll);
+  };
 
   return (
     <>
@@ -118,9 +145,9 @@ export function ArtistProfile() {
           </div>
         </div>
       </div>
-      <hr className="border-label-text   opacity-30 my-2" />
+      <hr className="border-label-text opacity-30 my-2" />
       {/* categories*/}
-      <div className="flex justify-center   text-label-text">
+      <div className="flex justify-center text-label-text">
         <div className="flex flex-row gap-1 px-2">
           {categoriesOfNft.map((category) => (
             <div
@@ -136,9 +163,9 @@ export function ArtistProfile() {
                 {category.name}
 
                 <span
-                  className={`flex hidden md:inline bg-label-text px-2 py-[2px] rounded-2xl text-center text-sm font-normal ${
+                  className={`flex hidden md:inline  px-2 py-[2px] rounded-2xl text-center text-sm font-normal ${
                     isActive === category.name
-                      ? "flex hidden md:inline bg-background-gray px-2 py-[2px] rounded-2xl text-center text-sm font-normal"
+                      ? "flex hidden md:inline bg-label-text px-2 py-[2px] rounded-2xl text-center text-sm font-normal"
                       : "text-white bg-backgroundButton "
                   } `}
                 >
@@ -150,42 +177,59 @@ export function ArtistProfile() {
         </div>
       </div>
       {/* Nft cards of artist*/}
-      <div className=" bg-background-gray">
-        <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-xs md:max-w-3xl xl:max-w-6xl">
-          {nftCards.map((nft) => (
-            <div className="flex flex-col bg-primary-background rounded-2xl">
-              <Link to={`/nft/${nft.id}`} key={nft.id}>
-                <img
-                  src={nft.image}
-                  alt={nft.name}
-                  className="w-full max-h-52 object-cover rounded-t-2xl"
-                />
-                <div className="p-4">
-                  <div>
-                    <h3 className="text-lg font-semibold">{nft.name}</h3>
-                  </div>
-                  <div className="flex flex-row gap-2 items-center mt-1 mb-3">
-                    <img
-                      className="size-5"
-                      src={artist.image}
-                      alt={artist.name}
-                    />
-                    <h3 className="text-md">{artist.name}</h3>
-                  </div>
-                  <div className="flex flex-row justify-between mt-4">
-                    <div className="text-xs">
-                      <h3 className="text-label-text mb-1">Price</h3>
-                      <p>{nft.price} ETH</p>
+      <div className=" bg-background-gray" ref={cardContainerRef}>
+        <div className="container mx-auto  px-6 py-8 py-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-y-10 max-w-xs md:max-w-3xl xl:max-w-6xl ">
+          {nftCards
+            .slice(0, showAll ? nftCards.length : visibleItemCount)
+            .map((nft) => (
+              <div
+                className={`flex flex-col bg-primary-background rounded-2xl md:max-w-80 transition-all duration-500 ${
+                  showAll
+                    ? "transition-all duration-500 opacity-100 transform scale-100 "
+                    : " transform scale-95"
+                }`}
+              >
+                <Link to={`/nft/${nft.id}`} key={nft.id}>
+                  <img
+                    src={nft.image}
+                    alt={nft.name}
+                    className="w-full   max-h-52 md:max-h-full object-cover rounded-t-2xl"
+                  />
+                  <div className="p-4">
+                    <div>
+                      <h3 className="text-lg font-semibold">{nft.name}</h3>
                     </div>
-                    <div className="text-xs flex flex-col items-center">
-                      <h3 className="text-label-text  mb-1">Highest Bid</h3>
-                      <p>{nft.highest_bid} wETH</p>
+                    <div className="flex flex-row gap-2 items-center mt-1 mb-3">
+                      <img
+                        className="size-5"
+                        src={artist.image}
+                        alt={artist.name}
+                      />
+                      <h3 className="text-md">{artist.name}</h3>
+                    </div>
+                    <div className="flex flex-row justify-between mt-4">
+                      <div className="text-xs">
+                        <h3 className="text-label-text mb-1">Price</h3>
+                        <p>{nft.price} ETH</p>
+                      </div>
+                      <div className="text-xs flex flex-col items-center">
+                        <h3 className="text-label-text  mb-1">Highest Bid</h3>
+                        <p>{nft.highest_bid} wETH</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          ))}
+                </Link>
+              </div>
+            ))}
+        </div>
+        <div className="flex justify-center pb-5">
+          <Button
+            variant={"outline"}
+            onClick={handleShowAll}
+            className="min-w-32 w-1/3 justify-center"
+          >
+            <h3>{showAll ? "Show Less" : "Show All"}</h3>
+          </Button>
         </div>
       </div>
     </>
