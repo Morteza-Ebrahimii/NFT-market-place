@@ -286,6 +286,7 @@ export const artistData = [
   },
 ];
 
+// time line for Ranking page
 export const timeLine = [
   { time: "1d", name: "Today" },
   { time: "7d", name: "This Week" },
@@ -293,6 +294,13 @@ export const timeLine = [
   { time: "All Time", name: "All Time" },
 ];
 
+// categories of ArtistProfile page
+export const categoriesOfNft = [
+  { name: "Created", count: 56 },
+  { name: "Owned", count: 64 },
+  { name: "Collection", count: 14 },
+];
+// nft data for ArtistProfile page
 export const nftData = [
   {
     id: 1,
