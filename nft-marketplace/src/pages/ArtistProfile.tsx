@@ -5,7 +5,7 @@ import { Button } from "../components/Button";
 import { useNftContext } from "../context/NftContext";
 import { useEffect, useRef, useState } from "react";
 import { categoriesOfNft } from "../data/data";
-import { CardsNft } from "../components/cordComponents/cardsNft";
+import { CardsNft } from "../components/cordComponents/CardsNft";
 import {
   Copy,
   Globe,

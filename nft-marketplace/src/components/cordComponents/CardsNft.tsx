@@ -11,7 +11,6 @@ export function CardsNft({
   artist: any;
 }) {
   return (
-    <div>
       <div
         key={nft.id}
         className={`flex flex-col bg-primary-background rounded-2xl xl:rounded-3xl md:max-w-96 transition-all duration-500 ${
@@ -57,6 +56,5 @@ export function CardsNft({
           </div>
         </Link>
       </div>
-    </div>
   );
 }
