@@ -11,6 +11,7 @@ interface NftCard {
   description: string;
   websites: string[];
   categories: string[];
+  artistId: number;
 }
 interface NftContextProps {
   nftCards: NftCard[];

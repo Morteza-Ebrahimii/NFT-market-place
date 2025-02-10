@@ -24,6 +24,7 @@ export function ArtistProfile() {
   const { nftCards } = useNftContext();
   const artist = getArtistById(Number(id));
   const cardContainerRef = useRef<HTMLDivElement>(null);
+  
 
   useEffect(() => {
     const updateVisibleItemCount = () => {
@@ -45,6 +46,7 @@ export function ArtistProfile() {
   if (!artist) {
     return <div>Artist not found</div>;
   }
+
 
   const handleShowAll = () => {
     if (showAll && cardContainerRef.current) {
@@ -149,11 +151,10 @@ export function ArtistProfile() {
         <div className="container mx-auto  px-6 py-8 py-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-y-10 max-w-xs md:max-w-3xl xl:max-w-6xl   justify-items-center ">
           {nftCards
             .slice(0, showAll ? nftCards.length : visibleItemCount)
-            .map((nft) => (
+            .map((nft: any) => (
               <CardsNft
                 nft={nft}
                 key={nft.id}
-                onHandleShowAll={handleShowAll}
                 showAll={showAll}
                 artist={artist}
               />

@@ -304,10 +304,11 @@ export const categoriesOfNft = [
 export const nftData = [
   {
     id: 1,
+    artistId: 1,
     name: "Ethereal Dream",
     price: 2.5,
     highest_bid: 2.3,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder.png",
 
     minted_on: "Feb 12, 2023",
     description:
@@ -320,10 +321,11 @@ export const nftData = [
   },
   {
     id: 2,
+    artistId: 2,
     name: "Cyber Pulse",
     price: 3.2,
     highest_bid: 3.0,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-1.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-1.png",
 
     minted_on: "Mar 5, 2023",
     description:
@@ -336,10 +338,11 @@ export const nftData = [
   },
   {
     id: 3,
+    artistId: 3,
     name: "Mystic Mirage",
     price: 4.1,
     highest_bid: 3.8,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-2.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-2.png",
 
     minted_on: "Jan 20, 2023",
     description:
@@ -352,10 +355,11 @@ export const nftData = [
   },
   {
     id: 4,
+    artistId: 4,
     name: "Galactic Symphony",
     price: 5.0,
     highest_bid: 4.7,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-3.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-3.png",
 
     minted_on: "Apr 10, 2023",
     description:
@@ -368,10 +372,11 @@ export const nftData = [
   },
   {
     id: 5,
+    artistId: 5,
     name: "Neon Samurai",
     price: 6.5,
     highest_bid: 6.2,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-4.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-4.png",
 
     minted_on: "May 3, 2023",
     description:
@@ -384,10 +389,11 @@ export const nftData = [
   },
   {
     id: 6,
+    artistId: 6,
     name: "Echoes of Eternity",
     price: 7.3,
     highest_bid: 7.0,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-5.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-5.png",
 
     minted_on: "Jun 15, 2023",
     description:
@@ -400,10 +406,11 @@ export const nftData = [
   },
   {
     id: 7,
+    artistId: 7,
     name: "Infinity Glitch",
     price: 3.8,
     highest_bid: 3.5,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-6.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-6.png",
 
     minted_on: "Jul 8, 2023",
     description:
@@ -416,10 +423,11 @@ export const nftData = [
   },
   {
     id: 8,
+    artistId: 8,
     name: "Solar Echo",
     price: 4.7,
     highest_bid: 4.5,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-7.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-7.png",
 
     minted_on: "Aug 22, 2023",
     description:
@@ -432,10 +440,11 @@ export const nftData = [
   },
   {
     id: 9,
+    artistId: 9,
     name: "Lunar Serenity",
     price: 6.1,
     highest_bid: 5.9,
-    image: "/src/assets/Nft`sArtistData/Image Placeholder-8.png",
+    image: "/src/assets/Nft`sArtistData/ImagePlaceholder-8.png",
 
     minted_on: "Oct 10, 2023",
     description:
