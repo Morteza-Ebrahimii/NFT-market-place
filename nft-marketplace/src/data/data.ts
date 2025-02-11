@@ -309,10 +309,18 @@ export const nftData = [
     price: 2.5,
     highest_bid: 2.3,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder.png",
-
     minted_on: "Feb 12, 2023",
-    description:
-      "A mesmerizing digital artwork that captures the essence of an ethereal dream, blending futuristic aesthetics with surreal imagination.",
+    description: `
+      A mesmerizing digital artwork that captures the essence of an ethereal dream, blending futuristic aesthetics with surreal imagination. 
+      This piece invites viewers to explore a world where reality and fantasy intertwine, creating a unique visual experience that transcends the ordinary. 
+      The vibrant colors and intricate details draw the viewer into a dreamlike state, evoking a sense of wonder and awe. 
+      Each element of the artwork is meticulously crafted to create a harmonious balance between the real and the surreal. 
+      This NFT is a testament to the limitless possibilities of digital art, pushing the boundaries of creativity and imagination. 
+      The artist's use of light and shadow adds depth and dimension, making the piece come alive. 
+      The ethereal quality of the artwork is enhanced by the use of soft, flowing lines and delicate textures. 
+      The overall effect is one of tranquility and serenity, inviting the viewer to lose themselves in the dreamlike landscape. 
+      This NFT is a must-have for collectors who appreciate the beauty and complexity of digital art.
+    `,
     websites: [
       "https://fake-nft-marketplace1.com",
       "https://fake-nft-marketplace2.com",
@@ -326,10 +334,18 @@ export const nftData = [
     price: 3.2,
     highest_bid: 3.0,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-1.png",
-
     minted_on: "Mar 5, 2023",
-    description:
-      "An electrifying fusion of neon lights and futuristic cyberpunk aesthetics, capturing the pulse of a digital metropolis.",
+    description: `
+      An electrifying fusion of neon lights and futuristic cyberpunk aesthetics, capturing the pulse of a digital metropolis. 
+      This artwork reflects the vibrant energy and dynamic atmosphere of a city that never sleeps, where technology and humanity coexist in a delicate balance. 
+      The artist's use of bold colors and sharp lines creates a sense of movement and excitement, drawing the viewer into the heart of the city. 
+      The intricate details and textures add depth and complexity, making the piece come alive. 
+      The neon lights and futuristic elements give the artwork a modern, edgy feel, while the underlying themes of connection and community add a layer of emotional depth. 
+      This NFT is a celebration of the digital age, capturing the essence of a world where technology and art intersect. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The overall effect is one of energy and excitement, inviting the viewer to experience the pulse of the city. 
+      This NFT is a must-have for collectors who appreciate the cutting-edge aesthetics and innovative approach of cyberpunk art.
+    `,
     websites: [
       "https://fake-nft-marketplace1.com",
       "https://fake-nft-marketplace3.com",
@@ -343,10 +359,18 @@ export const nftData = [
     price: 4.1,
     highest_bid: 3.8,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-2.png",
-
     minted_on: "Jan 20, 2023",
-    description:
-      "A surreal artwork that distorts the perception of space and time, creating an illusion of a never-ending dream.",
+    description: `
+      A surreal artwork that distorts the perception of space and time, creating an illusion of a never-ending dream. 
+      This piece challenges viewers to question their understanding of reality, offering a glimpse into a world where the boundaries of the possible are constantly shifting. 
+      The artist's use of fluid lines and abstract forms creates a sense of movement and transformation, drawing the viewer into the dreamlike landscape. 
+      The vibrant colors and intricate details add depth and complexity, making the piece come alive. 
+      The overall effect is one of mystery and wonder, inviting the viewer to explore the unknown. 
+      This NFT is a testament to the power of imagination, pushing the boundaries of what is possible in digital art. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The ethereal quality of the artwork is enhanced by the use of soft, flowing lines and delicate textures. 
+      This NFT is a must-have for collectors who appreciate the beauty and complexity of surreal art.
+    `,
     websites: [
       "https://fake-nft-marketplace2.com",
       "https://fake-nft-marketplace4.com",
@@ -360,10 +384,18 @@ export const nftData = [
     price: 5.0,
     highest_bid: 4.7,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-3.png",
-
     minted_on: "Apr 10, 2023",
-    description:
-      "A mesmerizing blend of cosmic colors and celestial harmonies, bringing the symphony of the universe to life.",
+    description: `
+      A mesmerizing blend of cosmic colors and celestial harmonies, bringing the symphony of the universe to life. 
+      This artwork captures the beauty and mystery of the cosmos, inviting viewers to embark on a journey through the stars and beyond. 
+      The artist's use of vibrant colors and intricate details creates a sense of wonder and awe, drawing the viewer into the celestial landscape. 
+      The overall effect is one of tranquility and serenity, inviting the viewer to lose themselves in the beauty of the universe. 
+      This NFT is a testament to the limitless possibilities of digital art, pushing the boundaries of creativity and imagination. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The ethereal quality of the artwork is enhanced by the use of soft, flowing lines and delicate textures. 
+      This NFT is a must-have for collectors who appreciate the beauty and complexity of cosmic art. 
+      The overall effect is one of tranquility and serenity, inviting the viewer to lose themselves in the beauty of the universe.
+    `,
     websites: [
       "https://fake-nft-marketplace1.com",
       "https://fake-nft-marketplace5.com",
@@ -377,10 +409,18 @@ export const nftData = [
     price: 6.5,
     highest_bid: 6.2,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-4.png",
-
     minted_on: "May 3, 2023",
-    description:
-      "A cybernetic warrior glowing in neon lights, blending ancient samurai tradition with futuristic innovation.",
+    description: `
+      A cybernetic warrior glowing in neon lights, blending ancient samurai tradition with futuristic innovation. 
+      This piece explores the intersection of past and future, tradition and technology, creating a unique visual narrative that is both timeless and cutting-edge. 
+      The artist's use of bold colors and sharp lines creates a sense of movement and excitement, drawing the viewer into the heart of the action. 
+      The intricate details and textures add depth and complexity, making the piece come alive. 
+      The neon lights and futuristic elements give the artwork a modern, edgy feel, while the underlying themes of honor and bravery add a layer of emotional depth. 
+      This NFT is a celebration of the digital age, capturing the essence of a world where technology and tradition intersect. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The overall effect is one of energy and excitement, inviting the viewer to experience the pulse of the city. 
+      This NFT is a must-have for collectors who appreciate the cutting-edge aesthetics and innovative approach of cyberpunk art.
+    `,
     websites: [
       "https://fake-nft-marketplace3.com",
       "https://fake-nft-marketplace5.com",
@@ -394,10 +434,18 @@ export const nftData = [
     price: 7.3,
     highest_bid: 7.0,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-5.png",
-
     minted_on: "Jun 15, 2023",
-    description:
-      "A dreamlike landscape where time stands still, reflecting the echoes of memories lost in eternity.",
+    description: `
+      A dreamlike landscape where time stands still, reflecting the echoes of memories lost in eternity. 
+      This artwork invites viewers to explore a world of timeless beauty and tranquility, where the past and present coexist in perfect harmony. 
+      The artist's use of soft, flowing lines and delicate textures creates a sense of movement and transformation, drawing the viewer into the dreamlike landscape. 
+      The vibrant colors and intricate details add depth and complexity, making the piece come alive. 
+      The overall effect is one of mystery and wonder, inviting the viewer to explore the unknown. 
+      This NFT is a testament to the power of imagination, pushing the boundaries of what is possible in digital art. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The ethereal quality of the artwork is enhanced by the use of soft, flowing lines and delicate textures. 
+      This NFT is a must-have for collectors who appreciate the beauty and complexity of surreal art.
+    `,
     websites: [
       "https://fake-nft-marketplace2.com",
       "https://fake-nft-marketplace4.com",
@@ -411,10 +459,18 @@ export const nftData = [
     price: 3.8,
     highest_bid: 3.5,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-6.png",
-
     minted_on: "Jul 8, 2023",
-    description:
-      "A mesmerizing digital distortion, where reality breaks apart into an infinite cascade of glitches and colors.",
+    description: `
+      A mesmerizing digital distortion, where reality breaks apart into an infinite cascade of glitches and colors. 
+      This piece challenges viewers to embrace the chaos and beauty of the digital age, offering a unique visual experience that is both captivating and thought-provoking. 
+      The artist's use of bold colors and sharp lines creates a sense of movement and excitement, drawing the viewer into the heart of the action. 
+      The intricate details and textures add depth and complexity, making the piece come alive. 
+      The neon lights and futuristic elements give the artwork a modern, edgy feel, while the underlying themes of connection and community add a layer of emotional depth. 
+      This NFT is a celebration of the digital age, capturing the essence of a world where technology and art intersect. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The overall effect is one of energy and excitement, inviting the viewer to experience the pulse of the city. 
+      This NFT is a must-have for collectors who appreciate the cutting-edge aesthetics and innovative approach of cyberpunk art.
+    `,
     websites: [
       "https://fake-nft-marketplace3.com",
       "https://fake-nft-marketplace6.com",
@@ -428,10 +484,18 @@ export const nftData = [
     price: 4.7,
     highest_bid: 4.5,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-7.png",
-
     minted_on: "Aug 22, 2023",
-    description:
-      "A radiant explosion of solar energy captured in an abstract masterpiece, echoing the power of the sun.",
+    description: `
+      A radiant explosion of solar energy captured in an abstract masterpiece, echoing the power of the sun. 
+      This artwork celebrates the beauty and intensity of the natural world, inviting viewers to bask in the warmth and light of the sun's eternal glow. 
+      The artist's use of vibrant colors and intricate details creates a sense of wonder and awe, drawing the viewer into the celestial landscape. 
+      The overall effect is one of tranquility and serenity, inviting the viewer to lose themselves in the beauty of the universe. 
+      This NFT is a testament to the limitless possibilities of digital art, pushing the boundaries of creativity and imagination. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The ethereal quality of the artwork is enhanced by the use of soft, flowing lines and delicate textures. 
+      This NFT is a must-have for collectors who appreciate the beauty and complexity of cosmic art. 
+      The overall effect is one of tranquility and serenity, inviting the viewer to lose themselves in the beauty of the universe.
+    `,
     websites: [
       "https://fake-nft-marketplace1.com",
       "https://fake-nft-marketplace6.com",
@@ -445,10 +509,18 @@ export const nftData = [
     price: 6.1,
     highest_bid: 5.9,
     image: "/src/assets/Nft`sArtistData/ImagePlaceholder-8.png",
-
     minted_on: "Oct 10, 2023",
-    description:
-      "A tranquil digital painting of a moonlit night, evoking a sense of peace and cosmic wonder.",
+    description: `
+      A tranquil digital painting of a moonlit night, evoking a sense of peace and cosmic wonder. 
+      This piece invites viewers to explore the serene beauty of the night sky, offering a moment of reflection and tranquility in a fast-paced world. 
+      The artist's use of soft, flowing lines and delicate textures creates a sense of movement and transformation, drawing the viewer into the dreamlike landscape. 
+      The vibrant colors and intricate details add depth and complexity, making the piece come alive. 
+      The overall effect is one of mystery and wonder, inviting the viewer to explore the unknown. 
+      This NFT is a testament to the power of imagination, pushing the boundaries of what is possible in digital art. 
+      The artist's unique vision and creative approach make this piece a standout in any collection. 
+      The ethereal quality of the artwork is enhanced by the use of soft, flowing lines and delicate textures. 
+      This NFT is a must-have for collectors who appreciate the beauty and complexity of surreal art.
+    `,
     websites: [
       "https://fake-nft-marketplace2.com",
       "https://fake-nft-marketplace5.com",
