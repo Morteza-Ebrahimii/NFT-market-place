@@ -528,3 +528,205 @@ export const nftData = [
     categories: ["Art", "Music", "Photography", "Virtual Worlds"],
   },
 ];
+
+// nft data for nft`s details
+export const nftDataInNftDetails = [
+  {
+    "id": 2,
+    "artistId": 2,
+    "name": "Cosmic Voyage",
+    "price": 3.0,
+    "highest_bid": 2.8,
+    "image": "/src/assets/Nft`sArtistData/CosmicVoyage.png",
+    "minted_on": "Mar 15, 2023",
+    "description": `
+      A stunning digital masterpiece that takes you on a journey through the cosmos, blending vibrant colors and intricate details. 
+      This artwork captures the essence of space exploration, offering a glimpse into the infinite possibilities of the universe. 
+      The interplay of light and shadow creates a dynamic and immersive experience, drawing the viewer into a world of wonder and discovery. 
+      Each element is carefully designed to evoke a sense of awe and curiosity, making this NFT a true collector's item. 
+      The artist's innovative use of digital techniques brings the cosmos to life, offering a unique perspective on the beauty of the universe. 
+      This piece is perfect for those who appreciate the intersection of art and science, and the limitless potential of digital creativity.
+    `,
+    "websites": [
+      "https://cosmic-nft-marketplace1.com",
+      "https://cosmic-nft-marketplace2.com"
+    ],
+    "categories": ["Space", "Sci-Fi", "Digital Art"]
+  },
+  {
+    "id": 3,
+    "artistId": 3,
+    "name": "Neon Dreams",
+    "price": 2.7,
+    "highest_bid": 2.5,
+    "image": "/src/assets/Nft`sArtistData/NeonDreams.png",
+    "minted_on": "Apr 20, 2023",
+    "description": `
+      A vibrant and electrifying digital artwork that captures the essence of urban nightlife. 
+      This piece combines bold neon colors with intricate details to create a dynamic and immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of energy and excitement, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of neon-lit streets and bustling cityscapes. 
+      This artwork is a testament to the power of digital art to capture the essence of modern life and the vibrant energy of the city.
+    `,
+    "websites": [
+      "https://neon-nft-marketplace1.com",
+      "https://neon-nft-marketplace2.com"
+    ],
+    "categories": ["Urban", "Digital Art", "Nightlife"]
+  },
+  {
+    "id": 4,
+    "artistId": 4,
+    "name": "Mystic Forest",
+    "price": 2.8,
+    "highest_bid": 2.6,
+    "image": "/src/assets/Nft`sArtistData/MysticForest.png",
+    "minted_on": "May 10, 2023",
+    "description": `
+      A captivating digital artwork that transports you to a mystical forest filled with enchanting creatures and magical landscapes. 
+      This piece combines intricate details with a rich color palette to create a truly immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of wonder and mystery, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of magic and fantasy. 
+      This artwork is a testament to the power of digital art to capture the essence of the natural world and the magic of the imagination.
+    `,
+    "websites": [
+      "https://mystic-nft-marketplace1.com",
+      "https://mystic-nft-marketplace2.com"
+    ],
+    "categories": ["Fantasy", "Nature", "Digital Art"]
+  },
+  {
+    "id": 5,
+    "artistId": 5,
+    "name": "Ocean Depths",
+    "price": 3.2,
+    "highest_bid": 3.0,
+    "image": "/src/assets/Nft`sArtistData/OceanDepths.png",
+    "minted_on": "Jun 5, 2023",
+    "description": `
+      A mesmerizing digital artwork that takes you on a journey to the depths of the ocean, where vibrant marine life and mysterious underwater landscapes await. 
+      This piece combines intricate details with a rich color palette to create a truly immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of wonder and awe, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of underwater beauty and mystery. 
+      This artwork is a testament to the power of digital art to capture the essence of the ocean and the magic of the deep.
+    `,
+    "websites": [
+      "https://ocean-nft-marketplace1.com",
+      "https://ocean-nft-marketplace2.com"
+    ],
+    "categories": ["Ocean", "Nature", "Digital Art"]
+  },
+  {
+    "id": 6,
+    "artistId": 6,
+    "name": "Galactic Horizon",
+    "price": 3.5,
+    "highest_bid": 3.3,
+    "image": "/src/assets/Nft`sArtistData/GalacticHorizon.png",
+    "minted_on": "Jul 12, 2023",
+    "description": `
+      A breathtaking digital artwork that captures the beauty and vastness of the galactic horizon. 
+      This piece combines vibrant colors with intricate details to create a truly immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of wonder and awe, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of cosmic beauty and infinite possibilities. 
+      This artwork is a testament to the power of digital art to capture the essence of the universe and the magic of the stars.
+    `,
+    "websites": [
+      "https://galactic-nft-marketplace1.com",
+      "https://galactic-nft-marketplace2.com"
+    ],
+    "categories": ["Space", "Sci-Fi", "Digital Art"]
+  },
+  {
+    "id": 7,
+    "artistId": 7,
+    "name": "Enchanted Garden",
+    "price": 2.9,
+    "highest_bid": 2.7,
+    "image": "/src/assets/Nft`sArtistData/EnchantedGarden.png",
+    "minted_on": "Aug 8, 2023",
+    "description": `
+      A magical digital artwork that transports you to an enchanted garden filled with vibrant flowers and mystical creatures. 
+      This piece combines intricate details with a rich color palette to create a truly immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of wonder and magic, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of enchantment and beauty. 
+      This artwork is a testament to the power of digital art to capture the essence of nature and the magic of the imagination.
+    `,
+    "websites": [
+      "https://enchanted-nft-marketplace1.com",
+      "https://enchanted-nft-marketplace2.com"
+    ],
+    "categories": ["Fantasy", "Nature", "Digital Art"]
+  },
+  {
+    "id": 8,
+    "artistId": 8,
+    "name": "Cyber City",
+    "price": 3.1,
+    "highest_bid": 2.9,
+    "image": "/src/assets/Nft`sArtistData/CyberCity.png",
+    "minted_on": "Sep 15, 2023",
+    "description": `
+      A futuristic digital artwork that captures the essence of a cyberpunk cityscape, where neon lights and towering skyscrapers dominate the horizon. 
+      This piece combines bold colors with intricate details to create a dynamic and immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of energy and excitement, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of futuristic technology and urban life. 
+      This artwork is a testament to the power of digital art to capture the essence of the future and the vibrant energy of the city.
+    `,
+    "websites": [
+      "https://cyber-nft-marketplace1.com",
+      "https://cyber-nft-marketplace2.com"
+    ],
+    "categories": ["Cyberpunk", "Urban", "Digital Art"]
+  },
+  {
+    "id": 9,
+    "artistId": 9,
+    "name": "Starlit Sky",
+    "price": 3.3,
+    "highest_bid": 3.1,
+    "image": "/src/assets/Nft`sArtistData/StarlitSky.png",
+    "minted_on": "Oct 20, 2023",
+    "description": `
+      A serene digital artwork that captures the beauty of a starlit sky, where the stars shine brightly against the dark night. 
+      This piece combines intricate details with a rich color palette to create a truly immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of peace and tranquility, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of celestial beauty and calm. 
+      This artwork is a testament to the power of digital art to capture the essence of the night sky and the magic of the stars.
+    `,
+    "websites": [
+      "https://starlit-nft-marketplace1.com",
+      "https://starlit-nft-marketplace2.com"
+    ],
+    "categories": ["Space", "Nature", "Digital Art"]
+  },
+  {
+    "id": 10,
+    "artistId": 10,
+    "name": "Golden Sunset",
+    "price": 3.4,
+    "highest_bid": 3.2,
+    "image": "/src/assets/Nft`sArtistData/GoldenSunset.png",
+    "minted_on": "Nov 25, 2023",
+    "description": `
+      A breathtaking digital artwork that captures the beauty of a golden sunset, where the sky is painted with vibrant hues of orange and gold. 
+      This piece combines intricate details with a rich color palette to create a truly immersive experience. 
+      The artist's use of light and shadow adds depth and dimension, making the artwork come alive. 
+      Each element is carefully crafted to evoke a sense of warmth and serenity, making this NFT a must-have for collectors. 
+      The interplay of colors and textures creates a visually stunning effect, drawing the viewer into a world of natural beauty and tranquility. 
+      This artwork is a testament to the power of digital art to capture the essence of the sunset and the magic of the golden hour.
+    `,
+    "websites": [
+      "https://sunset-nft-marketplace1.com",
+      "https://sunset-nft-marketplace2.com"
+    ],
+    "categories": ["Nature", "Landscape", "Digital Art"]
+  }
+]

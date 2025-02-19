@@ -135,7 +135,7 @@ export function NftDetail() {
                   {nft.categories.map((tag) => (
                     <div
                       key={tag}
-                      className="bg-background-gray text-sm md:text-base font-semibold py-2 md:py-3 xl:my-2 px-5 md:px-6 xl:px-8 w-fit rounded-2xl"
+                      className="bg-background-gray text-sm md:text-base font-semibold py-2 md:py-3 xl:my-2 px-5 md:px-6 xl:px-6 w-fit rounded-2xl"
                     >
                       {tag}
                     </div>
